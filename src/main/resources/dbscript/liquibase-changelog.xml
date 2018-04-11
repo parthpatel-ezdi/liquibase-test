@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+	<changeSet author="parth-ezdi"
+		id="2018-04-11/test_context" context="!test">
+		<sqlFile encoding="utf8" relativeToChangelogFile="true"
+			path="changelog/2018-04-11/test_context.sql"
+			endDelimiter=";" splitStatements="true" stripComments="true" />
+	</changeSet>
+	<changeSet author="parth-ezdi"
+		id="2018-04-11/create_tbl_test_master" context="int or stg or prod">
+		<sqlFile encoding="utf8" relativeToChangelogFile="true"
+			path="changelog/2018-04-11/create_tbl_test_master.sql"
+			endDelimiter=";" splitStatements="true" stripComments="true" />
+	</changeSet>
+
+	 <changeSet author="parth-ezdi"
+		id="2018-04-11/test_context_two" context="qa">
+		<sqlFile encoding="utf8" relativeToChangelogFile="true"
+			path="changelog/2018-04-11/test_context_two.sql"
+			endDelimiter=";" splitStatements="true" stripComments="true" />
+	</changeSet>
+	<!--<changeSet author="parth-ezdi"
+		id="2018-04-11/test_two_insert_person">
+		<sqlFile encoding="utf8" relativeToChangelogFile="true"
+			path="changelog/2018-04-11/test_two_insert_person.sql"
+			endDelimiter=";" splitStatements="true" stripComments="true" />
+	</changeSet> -->
+	<!-- <changeSet author="alokp-ezdi"
+		id="2018-03-23/add_is_deleted_in_comment_mst">
+		<sqlFile encoding="utf8" relativeToChangelogFile="true"
+			path="changelog/2018-03-23/add_is_deleted_in_comment_mst.sql"
+			endDelimiter=";" splitStatements="true" stripComments="true" />
+	</changeSet> -->
+	<!-- <changeSet author="parth-ezdi"
+		id="2018-03-23/changes_in_hospital_mst">
+		<sqlFile encoding="utf8" relativeToChangelogFile="true"
+			path="changelog/2018-03-23/changes_in_hospital_mst.sql"
+			endDelimiter=";" splitStatements="true" stripComments="true" />
+	</changeSet> -->
+	
+</databaseChangeLog>
